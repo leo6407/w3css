@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    .mySlides {
+        display: none;
+    }
+
+    .mySlides1 {
+        display: none;
+    }
+
+    .mySlides2 {
+        display: none;
+    }
+
+    .mySlides3 {
+        display: none;
+    }
+
+    .mySlides4 {
+        display: none;
+    }
+
+    .mySlides5 {
+        display: none;
+    }
+
+    .w3-left,
+    .w3-right,
+    .w3-badge {
+        cursor: pointer
+    }
+
+    .w3-badge {
+        height: 13px;
+        width: 13px;
+        padding: 0
+    }
+</style>
+
+<body>
+
+    <h2 class="w3-center">Manual Slideshow</h2>
+
+    <div class="w3-content w3-display-container" style="max-width: 500px;">
+        <img class="mySlides w3-animate-right" src="img_snowtops.jpg" style="width:100%">
+        <img class="mySlides w3-animate-right" src="img_lights.jpg" style="width:100%">
+        <img class="mySlides w3-animate-right" src="img_mountains.jpg" style="width:100%">
+        <img class="mySlides w3-animate-right" src="img_forest.jpg" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+    <div>
+        <h2 class="w3-center">Automatic Slideshow</h2>
+
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides1" src="img_la.jpg" style="width:100%">
+            <img class="mySlides1" src="img_ny.jpg" style="width:100%">
+            <img class="mySlides1" src="img_chicago.jpg" style="width:100%">
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides1");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </div>
+
+
+    <div class="w3-container">
+
+
+        <h2 class="w3-center">HTML slides</h2>
+
+        <div class="w3-content" style="max-width:400px">
+
+            <div class="mySlides2 w3-container w3-red">
+                <h1><b>Did You Know?</b></h1>
+                <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
+            </div>
+
+            <img class="mySlides2" src="img_monterosso.jpg" style="width:100%">
+
+            <div class="mySlides2 w3-container w3-xlarge w3-white w3-card-4">
+                <p><span class="w3-tag w3-yellow">New!</span>
+                <p>6 Crystal Glasses</p>
+                <p>Only $99 !!!</p>
+            </div>
+
+            <img class="mySlides2" src="img_manarola.jpg" style="width:100%">
+        </div>
+
+
+
+        <script>
+            var slideIndex1 = 0;
+            carousel1();
+
+            function carousel1() {
+                var i;
+                var x = document.getElementsByClassName("mySlides2");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex1++;
+                if (slideIndex1 > x.length) { slideIndex1 = 1 }
+                x[slideIndex1 - 1].style.display = "block";
+                setTimeout(carousel1, 2000);
+            }
+        </script>
+
+
+    </div>
+
+    <div>
+
+        <div class="w3-content w3-display-container" style="max-width: 60%;">
+            <h2>Slideshow Caption</h2>
+            <p>Add a caption text for each image slide with the w3-display-* classes (topleft, topmiddle, topright,
+                bottomleft, bottommiddle, bottomright or middle).</p>
+
+            <div class="w3-display-container mySlides3">
+                <img src="img_snowtops.jpg" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                    French Alps
+                </div>
+            </div>
+
+            <div class="w3-display-container mySlides3">
+                <img src="img_lights.jpg" style="width:100%">
+                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                    Northern Lights
+                </div>
+            </div>
+
+            <div class="w3-display-container mySlides3">
+                <img src="img_mountains.jpg" style="width:100%">
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                    Beautiful Mountains
+                </div>
+            </div>
+
+            <div class="w3-display-container mySlides3">
+                <img src="img_forest.jpg" style="width:100%">
+                <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                    The Rain Forest
+                </div>
+            </div>
+
+            <div class="w3-display-container mySlides3">
+                <img src="img_mountains.jpg" style="width:100%">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                    Mountains!
+                </div>
+            </div>
+
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs1(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs1(1)">&#10095;</button>
+
+        </div>
+
+        <script>
+            var slideIndex2 = 1;
+            showDivs1(slideIndex1);
+
+            function plusDivs1(n) {
+                showDivs1(slideIndex2 += n);
+            }
+
+            function showDivs1(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides3");
+                if (n > x.length) { slideIndex2 = 1 }
+                if (n < 1) { slideIndex2 = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex2 - 1].style.display = "block";
+            }
+        </script>
+    </div>
+
+
+    <div class="w3-container">
+        <h2>Slideshow Indicators</h2>
+        <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user
+            is currently viewing.</p>
+    </div>
+
+    <div class="w3-content" style="max-width:800px">
+        <img class="mySlides4" src="img_nature_wide.jpg" style="width:100%">
+        <img class="mySlides4" src="img_snow_wide.jpg" style="width:100%">
+        <img class="mySlides4" src="img_mountains_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-center">
+        <div class="w3-section">
+            <button class="w3-button w3-light-grey" onclick="plusDivs2(-1)">❮ Prev</button>
+            <button class="w3-button w3-light-grey" onclick="plusDivs2(1)">Next ❯</button>
+        </div>
+        <button class="w3-button demo4" onclick="currentDiv2(1)">1</button>
+        <button class="w3-button demo4" onclick="currentDiv2(2)">2</button>
+        <button class="w3-button demo4" onclick="currentDiv2(3)">3</button>
+    </div>
+
+    <script>
+        var slideIndex3 = 1;
+        showDivs2(slideIndex3);
+
+        function plusDivs2(n) {
+            showDivs2(slideIndex3 += n);
+        }
+
+        function currentDiv2(n) {
+            showDivs2(slideIndex3 = n);
+        }
+
+        function showDivs2(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides4");
+            var dots = document.getElementsByClassName("demo4");
+            if (n > x.length) { slideIndex3 = 1 }
+            if (n < 1) { slideIndex3 = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-red", "");
+            }
+            x[slideIndex3 - 1].style.display = "block";
+            dots[slideIndex3 - 1].className += " w3-red";
+        }
+    </script>
+
+    <div class="w3-container">
+        <h2>Slideshow Indicators</h2>
+        <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user
+            is currently viewing.</p>
+    </div>
+
+    <div class="w3-content w3-display-container" style="max-width:800px">
+        <img class="mySlides5" src="img_nature_wide.jpg" style="width:100%">
+        <img class="mySlides5" src="img_snow_wide.jpg" style="width:100%">
+        <img class="mySlides5" src="img_mountains_wide.jpg" style="width:100%">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+            style="width:100%">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs5(-1)">&#10094;</div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs5(1)">&#10095;</div>
+            <span class="w3-badge demo5 w3-border w3-transparent w3-hover-white" onclick="currentDiv5(1)"></span>
+            <span class="w3-badge demo5 w3-border w3-transparent w3-hover-white" onclick="currentDiv5(2)"></span>
+            <span class="w3-badge demo5 w3-border w3-transparent w3-hover-white" onclick="currentDiv5(3)"></span>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex4 = 1;
+        showDivs5(slideIndex);
+
+        function plusDivs5(n) {
+            showDivs5(slideIndex4 += n);
+        }
+
+        function currentDiv5(n) {
+            showDivs5(slideIndex4 = n);
+        }
+
+        function showDivs5(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides5");
+            var dots = document.getElementsByClassName("demo5");
+            if (n > x.length) { slideIndex4 = 1 }
+            if (n < 1) { slideIndex4 = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-white", "");
+            }
+            x[slideIndex4 - 1].style.display = "block";
+            dots[slideIndex4 - 1].className += " w3-white";
+        }
+    </script>
+
+    <div class="w3-container">
+        <h2>Slideshow Indicators</h2>
+        <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is
+            currently viewing.</p>
+    </div>
+
+    <div class="w3-content" style="max-width:1200px">
+        <img class="mySlides6" src="img_nature_wide.jpg" style="width:100%;display:none">
+        <img class="mySlides6" src="img_snow_wide.jpg" style="width:100%">
+        <img class="mySlides6" src="img_mountains_wide.jpg" style="width:100%;display:none">
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col s4">
+                <img class="demo6 w3-opacity w3-hover-opacity-off" src="img_nature_wide.jpg"
+                    style="width:100%;cursor:pointer" onclick="currentDiv6(1)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo6 w3-opacity w3-hover-opacity-off" src="img_snow_wide.jpg"
+                    style="width:100%;cursor:pointer" onclick="currentDiv6(2)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo6 w3-opacity w3-hover-opacity-off" src="img_mountains_wide.jpg"
+                    style="width:100%;cursor:pointer" onclick="currentDiv6(3)">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function currentDiv6(n) {
+            showDivs6(slideIndex5 = n);
+        }
+
+        function showDivs6(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides6");
+            var dots = document.getElementsByClassName("demo6");
+            if (n > x.length) { slideIndex5 = 1 }
+            if (n < 1) { slideIndex5 = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex5 - 1].style.display = "block";
+            dots[slideIndex5 - 1].className += " w3-opacity-off";
+        }
+    </script>
+
+
+    <h2 class="w3-center">Manual Slideshow</h2>
+
+    <div class="w3-content w3-display-container">
+        <img class="mySlides7" src="img_snowtops.jpg" style="width:100%">
+        <img class="mySlides7" src="img_lights.jpg" style="width:100%">
+        <img class="mySlides7" src="img_mountains.jpg" style="width:100%">
+        <img class="mySlides7" src="img_forest.jpg" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs7(-1, 0)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs7(1, 0)">&#10095;</button>
+    </div>
+
+    <div class="w3-content w3-display-container">
+        <img class="mySlides8" src="img_la.jpg" style="width:100%">
+        <img class="mySlides8" src="img_ny.jpg" style="width:100%">
+        <img class="mySlides8" src="img_chicago.jpg" style="width:100%">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs7(-1, 1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs7(1, 1)">&#10095;</button>
+    </div>
+
+    <script>
+        var slideIndex6 = [1, 1];
+        var slideId = ["mySlides7", "mySlides8"]
+        showDivs7(1, 0);
+        showDivs7(1, 1);
+
+        function plusDivs7(n, no) {
+            showDivs7(slideIndex6[no] += n, no);
+        }
+
+        function showDivs7(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex6[no] = 1 }
+            if (n < 1) { slideIndex6[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex6[no] - 1].style.display = "block";
+        }
+    </script>
+
+    <div class="w3-container">
+        <div class="w3-container">
+            <h2>Animated Slides</h2>
+            <p>Slide or fade in an element from the top, bottom, left or right of the screen with the w3-animate-*
+                classes.
+            </p>
+        </div>
+
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides9 w3-animate-top" src="img_rr_01.jpg" style="width:100%">
+            <img class="mySlides9 w3-animate-bottom" src="img_rr_02.jpg" style="width:100%">
+            <img class="mySlides9 w3-animate-top" src="img_rr_03.jpg" style="width:100%">
+            <img class="mySlides9 w3-animate-bottom" src="img_rr_04.jpg" style="width:100%">
+        </div>
+
+        <script>
+            var myIndex1 = 0;
+            carousel2();
+
+            function carousel2() {
+                var i;
+                var x = document.getElementsByClassName("mySlides9");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex1++;
+                if (myIndex1 > x.length) { myIndex1 = 1 }
+                x[myIndex1 - 1].style.display = "block";
+                setTimeout(carousel2, 2500);
+            }
+        </script>
+
+
+        <div class="w3-content w3-section" style="max-width:500px">
+            <p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p>
+
+            <img class="mySlides10 w3-animate-fading" src="img_rr_01.jpg" style="width:100%">
+            <img class="mySlides10 w3-animate-fading" src="img_rr_02.jpg" style="width:100%">
+            <img class="mySlides10 w3-animate-fading" src="img_rr_03.jpg" style="width:100%">
+            <img class="mySlides10 w3-animate-fading" src="img_rr_04.jpg" style="width:100%">
+        </div>
+
+        <script>
+            var myIndex2 = 0;
+            carousel2();
+
+            function carousel2() {
+                var i;
+                var x = document.getElementsByClassName("mySlides10");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex2++;
+                if (myIndex2 > x.length) { myIndex2 = 1 }
+                x[myIndex2 - 1].style.display = "block";
+                setTimeout(carousel2, 9000);
+            }
+        </script>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script>
+    function myAccFunc() {
+        var x = document.getElementById("demoAcc");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+
+    function myDropFunc() {
+        var x = document.getElementById("demoDrop");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className += " w3-green";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-green", "");
+        }
+    }
+</script>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block w3-xxlarge w3-card" style="width:25%">
+        <h3 class="w3-bar-item">Menu</h3>
+
+        <button class="w3-button w3-block w3-left-align" onclick="myAccFunc()">
+            Accordion<i class="fa fa-caret-down"></i>
+        </button>
+        <div id="demoAcc" class="w3-hide w3-card w3-white">
+            <a href="#" class="w3-bar-item w3-button">Accordion 1</a>
+            <a href="#" class="w3-bar-item w3-button">Accordion 2</a>
+        </div>
+
+        <div class="w3-dropdown-click">
+            <button class="w3-button" onclick="myDropFunc()">
+                Dropdown <i class="fa fa-caret-down"></i>
+            </button>
+
+            <div id="demoDrop" class="w3-dropdown-content w3-bar-block">
+                <a href="#" class="w3-bar-item w3-button w3-hover-blue">Dropdown 1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-orange">Dropdown 2</a>
+            </div>
+
+        </div>
+
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 4</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-24">Link 5</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Link 6 <i class="fa fa-caret-down"></i></button>
+
+            <div class="w3-dropdown-content w3-bar-block w3-hover-black">
+                <a href="#" class="w3-bar-item w3-button w3-hover-blue">Link 6-1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-orange">Link 6-2</a>
+            </div>
+
+        </div>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash"></i></a>
+    </div>
+
+    <!-- Page Content -->
+    <div style="margin-left:25%">
+
+        <div class="w3-container w3-teal">
+            <h1>My Page</h1>
+        </div>
+
+        <img src="img_car.jpg" alt="Car" style="width:100%">
+
+        <div class="w3-container">
+            <h2>Sidebar Navigation Example</h2>
+            <p>The sidebar with is set with "style="width:25%".</p>
+            <p>The left margin of the page content is set to the same value.</p>
+        </div>
+
+        <div class="w3-container">
+            <h2>Sidebar Icons</h2>
+            <p>In this example we have used icons in the sidebar.</p>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

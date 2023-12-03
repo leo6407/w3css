@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script>
+    function move() {
+        var elem = document.getElementById("myBar");
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+            }
+        }
+    }
+    function down() {
+        var elem = document.getElementById("myBar");
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width <= 0) {
+                clearInterval(id);
+            } else {
+                width--;
+                elem.style.width = width + '%';
+            }
+        }
+    }
+    function move1() {
+        var elem = document.getElementById("myBar1");
+        var width = 0;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 + '%';
+            }
+        }
+    }
+    function down1() {
+        var elem = document.getElementById("myBar1");
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width <= 0) {
+                clearInterval(id);
+            } else {
+                width--;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 + '%';
+            }
+        }
+    }
+    function move2() {
+        var elem = document.getElementById("myBar2");
+        var width = 20;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                document.getElementById("demo").innerHTML = width * 1 + '%';
+            }
+        }
+    }
+    function down2() {
+        var elem = document.getElementById("myBar2");
+        var width = 21;
+        var id = setInterval(frame, 10);
+        function frame() {
+            if (width <= 20) {
+                clearInterval(id);
+            } else {
+                width--;
+                elem.style.width = width + '%';
+                document.getElementById("demo").innerHTML = width * 1 + '%';
+            }
+        }
+    }
+    function move3() {
+        var elem = document.getElementById("myBar3");
+        var width = 0;
+        var id = setInterval(frame, 50);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                document.getElementById("myP").className = "w3-text-green w3-animate-opacity";
+                document.getElementById("myP").innerHTML = "Successfully uploaded 10 photos!";
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                var num = width * 1 / 10;
+                num = num.toFixed(0)
+                document.getElementById("demo1").innerHTML = num;
+            }
+        }
+    }
+</script>
+
+<body>
+    <div class="w3-container">
+
+        <h2>Progress Bar</h2>
+        <p>The w3-container class can be used for a progress bar.</p>
+        <p>The CSS width property can be used to set the height and width.</p>
+
+        <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:20%"></div>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Progress Bar Width</h2>
+        <p>Change the width of the progress bar with the width property:</p>
+
+        <div class="w3-light-grey">
+            <div class="w3-grey" style="height:24px;width:25%"></div>
+        </div><br>
+
+        <div class="w3-light-grey">
+            <div class="w3-grey" style="height:24px;width:50%"></div>
+        </div><br>
+
+        <div class="w3-light-grey">
+            <div class="w3-grey" style="height:24px;width:75%"></div>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Progress Bar Colors</h2>
+        <p>Use any of the w3-color classes to change the color of the progress bar.</p>
+
+        <div class="w3-light-grey">
+            <div class="w3-container w3-green w3-center" style="height:24px;width:25%">25%</div>
+        </div><br>
+
+        <div class="w3-light-grey">
+            <div class="w3-container w3-red w3-center" style="height:24px;width:50%">50%</div>
+        </div><br>
+
+        <div class="w3-light-grey">
+            <div class="w3-container w3-blue w3-center" style="height:24px;width:75%">75%</div>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+        <h2>Progress Bar Size</h2>
+        <p>Use a w3-<em>size</em> class (w3-small, w3-large) to change the size of the progress bar:</p>
+
+        <p>w3-tiny:</p>
+        <div class="w3-light-grey w3-tiny">
+            <div class="w3-container w3-green" style="width:50%">50%</div>
+        </div>
+
+        <p>w3-small:</p>
+        <div class="w3-light-grey w3-small">
+            <div class="w3-container w3-green" style="width:50%">50%</div>
+        </div>
+
+        <p>Default:</p>
+        <div class="w3-light-grey">
+            <div class="w3-container w3-green" style="width:50%">50%</div>
+        </div>
+
+        <p>w3-large:</p>
+        <div class="w3-light-grey w3-large">
+            <div class="w3-container w3-green" style="width:50%">50%</div>
+        </div>
+
+        <p>w3-xlarge:</p>
+        <div class="w3-light-grey w3-xlarge">
+            <div class="w3-container w3-green" style="width:50%">50%</div>
+        </div>
+
+        <p>w3-xxlarge:</p>
+        <div class="w3-light-grey w3-xxlarge">
+            <div class="w3-container w3-green" style="width:50%">50%</div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Progress Bar Padding</h2>
+        <p>Add text inside a w3-container element to add a label to a progress bar.</p>
+        <p>Use a w3-padding class to add padding to the container.</p>
+
+        <div class="w3-section w3-light-grey">
+            <div class="w3-container w3-padding-small w3-red w3-center" style="width:50%">50%</div>
+        </div>
+
+        <div class="w3-section w3-light-grey">
+            <div class="w3-container w3-padding w3-red w3-red w3-center" style="width:50%">50%</div>
+        </div>
+
+        <div class="w3-section w3-light-grey">
+            <div class="w3-container w3-padding-large w3-red w3-center" style="width:50%">50%</div>
+        </div>
+
+    </div>
+
+
+    <div class="w3-container">
+        <h2>Rounded Progress Bars</h2>
+        <p>Use any of the <strong>w3-round</strong> classes to add rounded corners to progress bars:</p>
+
+        <div class="w3-light-grey w3-round">
+            <div class="w3-container w3-blue w3-round" style="width:25%">25%</div>
+        </div><br>
+
+        <div class="w3-light-grey w3-round-large">
+            <div class="w3-container w3-blue w3-round-large" style="width:25%">25%</div>
+        </div><br>
+
+        <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-blue w3-round-xlarge" style="width:25%">25%</div>
+        </div>
+    </div>
+
+
+    <div class="w3-container">
+        <h2>Dynamic Progress Bar</h2>
+
+        <div class="w3-light-grey">
+            <div id="myBar" class="w3-green" style="height:24px;width:0"></div>
+        </div>
+        <br>
+
+        <button class="w3-button w3-green" onclick="move()">full</button>
+        <button class="w3-button w3-green" onclick="down()">down</button>
+    </div>
+    <br>
+    <div class="w3-container">
+        <div class="w3-light-grey">
+            <div id="myBar1" class="w3-container w3-green w3-center" style="width: 0px;">0%</div>
+        </div>
+        <br>
+        <button class="w3-button w3-green" onclick="move1()">Click Me</button>
+        <button class="w3-button w3-green" onclick="down1()">down</button>
+
+    </div>
+
+    <br>
+
+    <div class="w3-container">
+        <div class="w3-light-grey">
+            <div id="myBar2" class="w3-container w3-green" style="height:24px;width:20%"></div>
+        </div>
+
+        <p id="demo">20%</p>
+
+        <button class="w3-button w3-green" onclick="move2()">Click Me</button>
+        <button class="w3-button w3-green" onclick="down2()">Click Me</button>
+    </div>
+
+    <div class="w3-container">
+        <h2>Dynamic Progress Bar with Labels</h2>
+        <p>Label outside of the progress bar:</p>
+
+        <div class="w3-light-grey">
+            <div id="myBar3" class="w3-container w3-green" style="height:24px;width:0%">
+            </div>
+        </div>
+
+        <p id="myP">Added <span id="demo1">0</span> of 10 photos</p>
+
+        <button class="w3-button w3-light-grey" onclick="move3();this.disabled='true'">Upload Photos</button>
+    </div>
+
+    <br><br><br><br><br>
+</body>
+
+</html>

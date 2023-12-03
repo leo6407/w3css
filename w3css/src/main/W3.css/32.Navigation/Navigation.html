@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    function myFunction1() {
+        var x = document.getElementById("demo1");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+<body>
+
+    <div class="w3-container">
+        <h2>Navigation Bars</h2>
+        <p>The <strong>w3-bar</strong> class is a container for displaying HTML elements horizontally.</p>
+        <p>The <strong>w3-bar-item</strong> class defines the container elements.</p>
+        <p>It it a perfect tool for creating navigation bars:</p>
+    </div>
+
+    <div class="w3-bar w3-black">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+
+    <div class="w3-container">
+        <h2>Responsive Navigation Bars</h2>
+
+        <p>The <strong>w3-mobile</strong> class defines responsive elements.</p>
+        <p>On medium and large screens (tablets and desktops), the bar items will appear side by side horizontally. On
+            smalls screens (smartphones), the items are vertically and centered:</p>
+        <p><strong>Resize the browser window to see the effect.</strong></p>
+
+        <p>Default navigation bar:</p>
+        <div class="w3-bar w3-black">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <p>Responsive navigation bar:</p>
+        <div class="w3-bar w3-black">
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+        </div>
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Colored Navigation Bars</h2>
+        <p>Use the w3-color class to add a background color to the navigation bar:</p>
+
+        <div class="w3-bar w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+        <br>
+        <div class="w3-bar w3-green">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+        <br>
+        <div class="w3-bar w3-blue">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+        <br>
+        <div class="w3-bar w3-red">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+        <br>
+        <div class="w3-bar w3-blue-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Bordered Navigation Bars</h2>
+        <p>Use the w3-border class to add borders around the navigation bar:</p>
+
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <p>Use the w3-round classes to add rounded borders:</p>
+
+        <div class="w3-bar w3-border w3-round w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <p>Use the w3-card classes to display the navigation bar as a card:</p>
+
+        <div class="w3-bar w3-border w3-card-4 w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <p>You can also add a border to each link:</p>
+
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button w3-border-right">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-border-right">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-border-right">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-border-right">Link 3</a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Active/Current Link</h2>
+        <p>Add a w3-color class, or the w3-text-color class to the current link to let the user know which page he/she
+            is on:</p>
+
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button w3-green">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+        <br>
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button w3-text-teal">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Hoverable Links</h2>
+        <p>When you mouse a button, the background color will change to grey.</p>
+        <p>If you want a different hover color, use any of the <strong>w3-hover-color</strong> classes:</p>
+
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Default</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-green">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-blue">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-teal">Link 3</a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Hoverable Links</h2>
+        <p>When you mouse over a button, the background color will change to grey.</p>
+        <p>If you want to change the text color instead, turn off the default hover effect with the
+            <strong>w3-hover-none</strong> class, and add a <strong>w3-hover-text</strong> class:
+        </p>
+
+        <div class="w3-bar w3-border w3-black">
+            <a href="#" class="w3-bar-item w3-button">Default</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white">Link 3</a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Hoverable Links</h2>
+        <p>Play around with different hover effects:</p>
+
+        <div class="w3-bar">
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black">Link
+                1</a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black">Link
+                2</a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black">Link
+                3</a>
+        </div>
+        <br>
+        <div class="w3-bar">
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Link
+                1</a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Link
+                2</a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Link
+                3</a>
+        </div>
+        <br>
+        <div class="w3-bar">
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-blue">Link
+                1</a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-blue">Link
+                2</a>
+            <a href="#"
+                class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-blue">Link
+                3</a>
+        </div>
+        <br>
+        <div class="w3-bar">
+            <a href="#" style="border:5px solid white"
+                class="w3-bar-item w3-button w3-hover-none w3-hover-border-green">Link 1</a>
+            <a href="#" style="border:5px solid white"
+                class="w3-bar-item w3-button w3-hover-none w3-hover-border-red">Link 2</a>
+            <a href="#" style="border:5px solid white"
+                class="w3-bar-item w3-button w3-hover-none w3-hover-border-blue">Link 3</a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Right-Align Links</h2>
+        <p>To right-align elements in the navigation bar, add the w3-right class:</p>
+
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-green w3-right">Link 3</a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+        <h2>Navigation Bar Sizes</h2>
+        <p>Add the w3-small, w3-large, w3-xlarge or w3-xxlarge to change the size of the navigation (will change the
+            font-size of each link).</p>
+
+        <p>Default:</p>
+        <div class="w3-bar w3-border w3-green">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <p>w3-large:</p>
+        <div class="w3-bar w3-border w3-green w3-large">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <p>w3-xlarge:</p>
+        <div class="w3-bar w3-border w3-green w3-xlarge">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <p>w3-xxlarge:</p>
+        <div class="w3-bar w3-border w3-green w3-xxlarge">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+        <p>If you want more space between each link, instead of increasing the font-size, you could add a
+            w3-padding-classes to each link:</p>
+        <div class="w3-bar w3-border w3-green">
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 3</a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Navigation Bar Sizes</h2>
+        <p>Add the w3-padding-classes to change the padding of each element inside the navigation bar.</p>
+
+        <p>w3-padding-small:</p>
+        <div class="w3-bar w3-border w3-green">
+            <a href="#" class="w3-bar-item w3-button w3-padding-small">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-small">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-small">Link 2</a>
+        </div>
+
+        <p>Default:</p>
+        <div class="w3-bar w3-border w3-green">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        </div>
+
+        <p>w3-padding-large:</p>
+        <div class="w3-bar w3-border w3-green">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+        </div>
+
+        <p>w3-padding-16:</p>
+        <div class="w3-bar w3-border w3-green">
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Link 2</a>
+        </div>
+
+        <p>w3-padding-24:</p>
+        <div class="w3-bar w3-border w3-green">
+            <a href="#" class="w3-bar-item w3-button w3-padding-24">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-24">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-24">Link 2</a>
+        </div>
+
+        <p>w3-padding-32:</p>
+        <div class="w3-bar w3-border w3-green">
+            <a href="#" class="w3-bar-item w3-button w3-padding-32">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-32">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-32">Link 2</a>
+        </div>
+
+        <p><strong>Note:</strong> You can also add padding to the navigation bar, instead of each link. However, if you
+            do this, note that the links do not get full padding on hover:</p>
+        <p>w3-padding-small:</p>
+        <div class="w3-bar w3-border w3-green w3-padding-small">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        </div>
+        <p>w3-padding:</p>
+        <div class="w3-bar w3-border w3-green w3-padding">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        </div>
+        <p>w3-padding-large:</p>
+        <div class="w3-bar w3-border w3-green w3-padding-large">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+        <h2>Navigation Bar Sizes</h2>
+        <p>Customize the width of the list items with the width property (Note: on smaller screens, they will transform
+            to 100%):</p>
+
+        <p>Default with two items:</p>
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-green">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+        </div>
+
+        <p>Two items, customized:</p>
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="#" style="width:50%" class="w3-bar-item w3-button w3-mobile w3-green">Link 1</a>
+            <a href="#" style="width:50%" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+        </div>
+
+        <p>Two items <strong>centered:</strong></p>
+        <div class="w3-bar w3-border w3-light-grey w3-center">
+            <a href="#" style="width:50%" class="w3-bar-item w3-button w3-mobile w3-green">Link 1</a>
+            <a href="#" style="width:50%" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+        </div>
+
+        <p>Three items:</p>
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="#" style="width:33.33%" class="w3-bar-item w3-button w3-mobile w3-green">Link 1</a>
+            <a href="#" style="width:33.33%" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <a href="#" style="width:33.33%" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+        </div>
+
+        <p>Three items <strong>centered:</strong></p>
+        <div class="w3-bar w3-border w3-light-grey w3-center">
+            <a href="#" style="width:33.33%" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" style="width:33.33%" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <a href="#" style="width:33.33%" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+        </div>
+
+        <p>Four items:</p>
+        <div class="w3-bar w3-border w3-light-grey w3-center">
+            <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+            <a href="#" style="width:25%" class="w3-bar-item w3-button w3-mobile">Link 4</a>
+        </div>
+
+        <p>Five items:</p>
+        <div class="w3-bar w3-border w3-light-grey w3-center">
+            <a href="#" style="width:20%" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" style="width:20%" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <a href="#" style="width:20%" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+            <a href="#" style="width:20%" class="w3-bar-item w3-button w3-mobile">Link 4</a>
+            <a href="#" style="width:20%" class="w3-bar-item w3-button w3-mobile">Link 5</a>
+        </div>
+
+        <p>Six items:</p>
+        <div class="w3-bar w3-border w3-light-grey w3-center">
+            <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+            <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link 4</a>
+            <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link 5</a>
+            <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link 6</a>
+        </div>
+
+        <p>Other examples:</p>
+        <div class="w3-bar w3-border w3-light-grey w3-center">
+            <a href="#" style="width:50%" class="w3-bar-item w3-button w3-mobile">Link</a>
+            <a href="#" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Link</a>
+            <a href="#" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Link</a>
+            <a href="#" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Link</a>
+            <a href="#" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Link</a>
+        </div>
+        <br>
+
+        <div class="w3-bar w3-border w3-light-grey w3-center">
+            <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link</a>
+            <a href="#" style="width:66.66%" class="w3-bar-item w3-button w3-mobile">Link</a>
+            <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link</a>
+        </div>
+
+        <br>
+        <div class="w3-bar w3-border w3-light-grey w3-center">
+            <a href="#" style="width:16.66%" class="w3-hide-small">
+                <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link</a>
+                <a href="#" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Link</a>
+                <a href="#" style="width:16.66%" class="w3-hide-small">
+        </div>
+    </div>
+
+    <div class="w3-container">
+
+        <h2>Navigation Bar with Icons</h2>
+
+        <p>w3-small:</p>
+        <div class="w3-bar w3-light-grey w3-border w3-small">
+            <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
+        </div>
+
+        <p>Default:</p>
+        <div class="w3-bar w3-light-grey w3-border">
+            <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
+        </div>
+
+        <p>w3-large:</p>
+        <div class="w3-bar w3-light-grey w3-border w3-large">
+            <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
+        </div>
+
+        <p>w3-xlarge:</p>
+        <div class="w3-bar w3-light-grey w3-border w3-xlarge">
+            <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
+        </div>
+
+        <p>w3-xxlarge:</p>
+        <div class="w3-bar w3-light-grey w3-border w3-xxlarge">
+            <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
+        </div>
+
+        <p>w3-xxxlarge:</p>
+        <div class="w3-bar w3-light-grey w3-border w3-xxxlarge">
+            <a href="#" class="w3-bar-item w3-button w3-green"><i class="fa fa-home"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
+            <a href="#" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i></a>
+        </div>
+
+    </div>
+
+    <div class="w3-container">
+        <h2>w3-bar-item</h2>
+        <p>If you want text instead of buttons inside the navigation bar, use the w3-bar-item class to get the same
+            padding as the buttons:</p>
+    </div>
+
+    <div class="w3-bar w3-black">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <span class="w3-bar-item">More Text</span>
+    </div>
+
+    <div class="w3-container">
+        <h2>Navigation Bar with Input and Buttons</h2>
+
+        <p>Input and button inside navbar:</p>
+        <div class="w3-bar w3-light-grey w3-border">
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
+            <button class="w3-bar-item w3-button w3-green w3-mobile">Go</button>
+        </div>
+
+        <p>Padded navbar:</p>
+        <div class="w3-bar w3-light-grey w3-border w3-padding">
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <input type="text" class="w3-bar-item w3-input w3-white w3-mobile" placeholder="Search..">
+            <button class="w3-bar-item w3-button w3-green w3-mobile">Go</button>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <h2>Navigation Bar with Dropdown</h2>
+        <p>Add a dropdown menu inside the navigation bar:</p>
+
+        <div class="w3-bar w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Dropdown <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <h2>Navigation Bar with Dropdown</h2>
+        <p>Click on the Dropdown link to open the dropdown menu.</p>
+
+        <div class="w3-bar w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <div class="w3-dropdown-click">
+                <button class="w3-button" onclick="myFunction()">
+                    Dropdown <i class="fa fa-caret-down"></i>
+                </button>
+                <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <h2>Navigation Bar with Dropdown</h2>
+        <p>In this example, we remove the w3-bar-block class from w3-dropdown-content, to horizontally align the
+            dropdown links (instead of vertically).</p>
+
+        <div class="w3-bar w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <div class="w3-dropdown-hover">
+                <button class="w3-button">Dropdown<i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4">
+                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container">
+        <h2>Responsive navbar with responsive dropdown</h2>
+        <p>Resize the browser window to see the result:</p>
+
+        <div class="w3-bar w3-black">
+            <a href="#" class="w3-bar-item w3-button w3-mobile w3-green">Home</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+            <div class="w3-dropdown-hover w3-mobile">
+                <button class="w3-button">Dropdown <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-top">
+        <div class="w3-bar w3-red">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="w3-container">
+        <h2>Fixed Top Navigation</h2>
+        <h3>The w3-top class forces the navigation bar to stay at the top of the page, even when the user scrolls the
+            page.</h3>
+        <h3>Scroll this page to see the effect.</h3>
+        <p>Some text to enable scrolling..</p>
+        <p>Some text some text some text some text..</p>
+    </div>
+
+    <div class="w3-bottom">
+        <div class="w3-bar w3-red">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+    </div>
+
+
+    <div class="w3-container">
+
+        <h2>Navigation Bars</h2>
+        <p>The <strong>w3-bar-block</strong> class is a container for displaying HTML elements vertically.</p>
+        <p>The <strong>w3-bar-item</strong> class defines the container elements.</p>
+
+        <div class="w3-bar-block w3-light-grey">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <a href="#" class="w3-bar-item w3-button">Link 1</a>
+            <a href="#" class="w3-bar-item w3-button">Link 2</a>
+            <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+
+    </div>
+
+    <div class="w3-bar w3-red">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small">Link 3</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+            onclick="myFunction1()">&#9776;</a>
+    </div>
+
+    <div id="demo1" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <div class="w3-container">
+        <p>In the example, the navigation bar is replaced with a button (☰) in the top right corner when shown on
+            tablets and mobile devices. When the button is clicked, the links in the bar will vertically stack.</p>
+        <p>Resize the screen to see the effect.</p>
+    </div>
+
+    <br><br><br><br><br>
+
+</body>
+
+</html>
